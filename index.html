@@ -1,0 +1,188 @@
+﻿ <!doctype html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <title>Primera Aplicacion</title>
+ 
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/temasapp1.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js"></script>
+  <script src="phonegap.js" type="text/javascript"></script>
+  <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+  </script>
+  </head>
+ 
+  <body onLoad="MM_preloadImages('imagenes/semanasanta1.jpg','imagenes/cecina2.jpg','imagenes/noche2.jpg')">
+  <div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+ <h1>Atlixco</h1>
+  </div>
+  
+  <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+  <h1>Elaborado Por:</h1>
+  <div>
+  <p>Norma Edith Ortega Flores</p>
+     <p>Cuarto Semestre</p>
+     <p>C.B.T.i.s No.16</p>
+     <p>DAM</p>
+  <br>
+  </div>
+  <div>
+  <img src="imagenes/yo.png" width="50%" height="50%"> </div>
+  <center><h4>Norma Edith Ortega Flores</h4></center>
+  <center><img src="res/android/mdpi.png" width="56" height="46"></center>
+  </div>
+  </div>
+  <div><iframe src="http://turismoatlixco.com/" style="width:650px;height:90%;max-width:200%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe><a href="http://turismoatlixco.com/"></div>
+  <div>
+  <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Atlixco Villa Iluminada</h2>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+ <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Turismo De Atlixco</h2>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Semana Santa De Atlixco</h2>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Feria De La Cecina</h2>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+   <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Feria De La Noche Buena</h2>
+  </a>
+  </li>
+  </ul>
+  </div>
+  <div data-role="footer" data-theme="a">
+   <center><h4>Norma Edith Ortega Flores</h4></center>
+ <center> <img src="res/android/mdpi.png" width="56" height="46"></center>
+  </div>
+  </div>
+  </div>
+  
+  <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Atlixco Villa Iluminada</h1>
+  </div>
+  <div data-role="content" align="center">
+  <div>
+  <h2>EL recorrido de Villa Iluminada inicia en la avenida Hidalgo esquina con la calle 7 sur, atraviesa el zócalo de la ciudad y continúa por la calle Constitución, pasa por la calle 4 norte, frente al Ex Convento del Carmen, llega a calle Nicolás Bravo, recorre el boulevard Ferrocarriles y finaliza en el parque revolución.
+[Inicio Zócalo de Atlixco, Atlixco]</h2>
+<center><div><iframe width="560" height="315" src="https://www.youtube.com/embed/yS36goehWPs" frameborder="0" allowfullscreen></iframe></div></center>
+  </div>
+  </div>
+  <div data-role="footer" data-theme="a">
+   <center><h4>Norma Edith Ortega Flores</h4></center>
+ <center> <img src="res/android/mdpi.png" width="56" height="46"></center>
+  </div>
+  </div>
+  </div>
+ 
+  <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Turismo De Atlixco</h1>
+ </div>
+ <div data-role="content" align="center">
+<div><center>
+ <!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:650px;height:300px;max-width:200%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com --></center></div>
+ </div>
+ <div data-role="footer" data-theme="a">
+  <center><h4>Norma Edith Ortega Flores</h4></center>
+<div><center> <img src="res/android/mdpi.png" width="56" height="46"></center></div>
+ </div>
+ </div>
+ </div>
+
+ <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Semana Santa De Atlixco</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <h2>Vía Crucis de Atlixco, en el estado de Puebla, en México, reúne desde hace más de un siglo en Semana Santa a un grupo de penitentes capaces de traspasar el umbral del dolor por su devoción, al salir en procesión encapuchados y descalzos, con grilletes y coronas de espinas.
+Atlixco, un municipio situado a 30 minutos de Puebla capital y que fue nombrado recientemente Pueblo Mágico, acogió este viernes la llamada procesión de los Engrillados, que se celebra cada Viernes Santo en medio de gran expectación.</h2></div>
+ </div>
+ <center><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','imagenes/semanasanta1.jpg',1)"><img src="imagenes/semanasanta.jpg" width="230" height="214" id="Image9"></a>
+<div data-role="footer"></div></center>
+ <center> <h4>Norma Edith Ortega Flores</h4></center>
+ <div><center> <img src="res/android/mdpi.png" width="56" height="46"></center></div>
+ </div>
+ </div>
+ </div>
+
+ <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Feria De La Cecina</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <h2>El municipio de Atlixco será sede de la Feria de la Cecina, por lo que se esperan miles de visitantes, quienes año con año se dan cita para probar este platillo en los diversos stands y restaurantes que participan en el evento.
+La cecina proviene de la parte más suave de la res como es el lomo, pieza negra, bola y aguayón y su producción es una tradición de los atlixquenses, que se practica desde el siglo pasado.
+Disfrútala, acompañada de guarniciones típicas de Puebla como: nopales, queso, crema, aguacate y las deliciosas tortillas hechas a mano.</h2>
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','imagenes/cecina2.jpg',1)"><img src="imagenes/cecina1.jpg" width="222" height="228" id="Image10"></a> </div>
+ </div>
+ <div data-role="footer" data-theme="a">
+<center> <h4>Norma Edith Ortega Flores</h4></center>
+<div><center><img src="res/android/mdpi.png" width="56" height="46"></center><div>
+ </div>
+ </div>
+ </div>
+
+ <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Feria De La Noche Buenna</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <h2>Entre las que destacan, la Noche Buena tradicional de color rojo, la marmoleada, la blanca, el color salmón y la de color vino. Asiste y adquiere las bellas flores que decorarán en esta temporada tu hogar.
+La Noche buena es una de las producciones más importantes que se realizan en la colonia Cabrera y es aquí en donde los productores cultivan esta  flor para después comercializarla en diversos estados del país, ya que Atlixco ocupa el tercer lugar en el país de producción y el primer lugar en el estado de Puebla.</h2></div>
+ </div>
+ <center> <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','imagenes/noche2.jpg',1)"><img src="imagenes/noche1.jpg" width="326" height="201" id="Image11"></a></center>
+<div data-role="footer" data-theme="a">
+  <center><h4>Norma Edith Ortega Flores</h4></center>
+  <div><center><img src="res/android/mdpi.png" width="56" height="46"></center></div>
+ </div>
+ </div>
+ </div>
+
+</body>
+</html>
